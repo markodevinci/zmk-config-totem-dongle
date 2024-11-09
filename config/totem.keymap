@@ -143,10 +143,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_MUTE        &kp K_VOLUME_DOWN  &kp K_VOLUME_UP    &kp LC(LA(LG(SPACE)))  &kp LG(SPACE)  &kp LA(SPACE)  &kp LC(SPACE)  &kp LC(LS(LA(LG(SPACE))))
-           &kp LSHIFT            &kp LCTRL             &kp LALT          &kp LGUI           &kp LS(TAB)        &kp LEFT               &kp DOWN       &kp UP         &kp RIGHT      &kp CAPS
-&mkp MCLK  &mkp MB4              &mkp MB5              &kp C_PLAY_PAUSE  &kp C_PREVIOUS     &kp C_NEXT         &kp HOME               &kp PG_DN      &kp PG_UP      &kp END        &kp INSERT                 &kp DEL
-                                                       &trans            &trans             &trans             &trans                 &trans         &trans
+           &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_MUTE        &kp K_VOLUME_DOWN  &kp K_VOLUME_UP    &kp LG(LEFT_BRACKET)  &kp PAGE_UP  &kp PAGE_DOWN  &kp LG(RIGHT_BRACKET)  &none
+           &kp LSHIFT            &kp LCTRL             &kp LALT          &kp LGUI           &kp LS(TAB)        &kp LEFT              &kp DOWN     &kp UP         &kp RIGHT              &kp CAPS
+&mkp MCLK  &mkp MB4              &mkp MB5              &kp C_PLAY_PAUSE  &kp C_PREVIOUS     &kp C_NEXT         &kp LA(LEFT)          &kp HOME     &kp END        &kp LA(RIGHT)          &trans    &kp DEL
+                                                       &trans            &trans             &trans             &trans                &trans       &trans
             >;
         };
 

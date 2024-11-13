@@ -24,9 +24,9 @@
 #define TVP2 5
 
 &mt {
-    quick-tap-ms = <100>;
-    flavor = "tap-preferred";
-    tapping-term-ms = <170>;
+    quick-tap-ms = <150>;
+    flavor = "balanced";
+    tapping-term-ms = <240>;
 };
 
 &sk { quick-release; };
@@ -143,10 +143,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_MUTE        &kp K_VOLUME_DOWN  &kp K_VOLUME_UP    &kp LG(LEFT_BRACKET)  &kp PAGE_UP  &kp PAGE_DOWN  &kp LG(RIGHT_BRACKET)  &none
-           &kp LSHIFT            &kp LCTRL             &kp LALT          &kp LGUI           &kp LS(TAB)        &kp LEFT              &kp DOWN     &kp UP         &kp RIGHT              &kp CAPS
-&mkp MCLK  &mkp MB4              &mkp MB5              &kp C_PLAY_PAUSE  &kp C_PREVIOUS     &kp C_NEXT         &kp LA(LEFT)          &kp HOME     &kp END        &kp LA(RIGHT)          &trans    &kp DEL
-                                                       &trans            &trans             &trans             &trans                &trans       &trans
+           &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_MUTE        &kp K_VOLUME_DOWN  &kp K_VOLUME_UP    &kp LG(LEFT_BRACKET)  &kp PAGE_DOWN  &kp PAGE_UP         &kp LG(RIGHT_BRACKET)  &none
+           &kp LSHIFT            &kp LCTRL             &kp LALT          &kp LGUI           &kp LS(TAB)        &kp LEFT              &kp DOWN       &kp UP              &kp RIGHT              &none
+&mkp MCLK  &mkp MB4              &mkp MB5              &kp C_PLAY_PAUSE  &kp C_PREVIOUS     &kp C_NEXT         &kp LA(LEFT)          &kp LG(RIGHT)  &kp LG(LEFT_ARROW)  &kp LA(RIGHT)          &trans  &kp DEL
+                                                       &trans            &trans             &trans             &trans                &trans         &trans
             >;
         };
 
@@ -154,7 +154,7 @@
             bindings = <
            &kp NUMBER_1  &kp N2     &kp N3    &kp N4    &kp N5       &kp N6     &kp N7    &kp N8    &kp N9     &kp N0
            &kp LSHIFT    &kp LCTRL  &kp LALT  &kp LGUI  &kp MINUS    &kp EQUAL  &kp RGUI  &kp RALT  &kp RCTRL  &kp RSHFT
-&kp GRAVE  &none         &none      &none     &none     &kp LBKT     &kp RBKT   &none     &none     &none      &none      &kp BACKSLASH
+&kp GRAVE  &none         &none      &none     &none     &kp LBKT     &kp RBKT   &none     &none     &none      &kp CAPS   &kp BACKSLASH
                                     &trans    &trans    &trans       &trans     &trans    &trans
             >;
         };
@@ -176,10 +176,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp EXCL  &kp AT  &kp HASH          &kp DLLR              &kp PRCNT         &kp CARET        &kp AMPS               &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-           &none     &none   &none             &none                 &kp UNDERSCORE    &kp PLUS         &none                  &none              &none                 &none
-&kp TILDE  &none     &none   &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &none                 &none                  &kp PIPE
-                             &trans            &trans                &trans            &trans           &trans                 &trans
+           &kp EXCL  &kp AT  &kp HASH              &kp DLLR          &kp PRCNT         &kp CARET        &kp AMPS           &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+           &none     &none   &kp LEFT_PARENTHESIS  &kp MINUS         &kp UNDERSCORE    &kp PLUS         &kp EQUAL          &kp RIGHT_PARENTHESIS  &none                 &none
+&kp TILDE  &none     &none   &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &none                 &kp CAPS               &kp PIPE
+                             &trans                &trans            &trans            &trans           &trans             &trans
             >;
         };
 
@@ -202,7 +202,7 @@
             bindings = <
               &kp F1        &kp F2        &kp F3        &kp F4      &kp F5        &kp F6        &kp F7        &kp F8  &kp F9  &kp F10
               &kp F11       &kp F12       &kp F13       &kp F14     &kp F15       &none         &none         &none   &none   &none
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_PRV  &bt BT_NXT    &out OUT_BLE  &out OUT_USB  &none   &none   &mo 5    &none
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_PRV  &bt BT_NXT    &out OUT_BLE  &out OUT_USB  &none   &mo 5   &none    &none
                                           &trans        &trans      &trans        &trans        &trans        &trans
             >;
         };

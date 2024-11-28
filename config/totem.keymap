@@ -42,7 +42,7 @@
 
         mo-fn {
             bindings = <&mo 3>;
-            key-positions = <32 37>;
+            key-positions = <32 37 20 31>;
             slow-release;
             timeout-ms = <100>;
         };
@@ -50,49 +50,47 @@
         right-hyper {
             bindings = <&kp RS(RA(RC(RGUI)))>;
             key-positions = <16 17 18 19>;
-            timeout-ms = <100>;
-            slow-release;
         };
 
         left-hyper {
             bindings = <&kp LS(LA(LC(LGUI)))>;
             key-positions = <10 11 12 13>;
-            timeout-ms = <100>;
-            slow-release;
         };
 
         right-meh {
             bindings = <&kp RA(RC(RGUI))>;
             key-positions = <17 18 16>;
-            timeout-ms = <100>;
-            slow-release;
+            layers = <0>;
         };
 
         left-meh {
             bindings = <&kp LA(LC(LGUI))>;
             key-positions = <11 12 13>;
-            timeout-ms = <100>;
-            slow-release;
+            layers = <0>;
         };
 
         right-alt {
             bindings = <&kp RALT>;
             key-positions = <16 17>;
+            layers = <0>;
         };
 
         left-alt {
             bindings = <&kp LALT>;
             key-positions = <12 13>;
+            layers = <0>;
         };
 
         right-ctrl {
             bindings = <&kp RCTRL>;
             key-positions = <17 18>;
+            layers = <0>;
         };
 
         left-ctrl {
             bindings = <&kp LCTRL>;
             key-positions = <12 11>;
+            layers = <0>;
         };
     };
 

@@ -119,6 +119,18 @@
             key-positions = <1 2 3>;
             timeout-ms = <100>;
         };
+
+        right-cmd {
+            bindings = <&kp RCMD>;
+            key-positions = <27 28 29>;
+            timeout-ms = <100>;
+        };
+
+        left-cmd {
+            bindings = <&kp LCMD>;
+            key-positions = <22 23 24>;
+            timeout-ms = <100>;
+        };
     };
 
     behaviors {

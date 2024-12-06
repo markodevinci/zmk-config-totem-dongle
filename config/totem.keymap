@@ -51,62 +51,73 @@
         right-hyper {
             bindings = <&kp RS(RA(RC(RGUI)))>;
             key-positions = <16 17 18 19>;
+            timeout-ms = <100>;
         };
 
         left-hyper {
             bindings = <&kp LS(LA(LC(LGUI)))>;
             key-positions = <10 11 12 13>;
+            timeout-ms = <100>;
         };
 
         right-meh {
             bindings = <&kp RA(RC(RGUI))>;
             key-positions = <17 18 16>;
             layers = <0>;
+            timeout-ms = <100>;
         };
 
         left-meh {
             bindings = <&kp LA(LC(LGUI))>;
             key-positions = <11 12 13>;
             layers = <0>;
+            timeout-ms = <100>;
         };
 
         right-alt {
             bindings = <&kp RALT>;
             key-positions = <16 17>;
             layers = <0>;
+            timeout-ms = <100>;
         };
 
         left-alt {
             bindings = <&kp LALT>;
             key-positions = <12 13>;
             layers = <0>;
+            timeout-ms = <100>;
         };
 
         right-ctrl {
             bindings = <&kp RCTRL>;
             key-positions = <17 18>;
             layers = <0>;
+            timeout-ms = <100>;
         };
 
         left-ctrl {
             bindings = <&kp LCTRL>;
             key-positions = <12 11>;
             layers = <0>;
+            timeout-ms = <100>;
         };
 
         sticky-shift {
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <34 35>;
+            timeout-ms = <100>;
         };
 
         right-capsword {
             bindings = <&caps_word>;
             key-positions = <6 8 7>;
+            timeout-ms = <100>;
         };
 
         left-capsword {
             bindings = <&caps_word>;
             key-positions = <1 2 3>;
+            timeout-ms = <100>;
         };
     };
 

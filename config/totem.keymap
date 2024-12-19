@@ -79,6 +79,7 @@
             key-positions = <16 17>;
             layers = <0>;
             timeout-ms = <100>;
+            require-prior-idle-ms = <100>;
         };
 
         left-alt {
@@ -86,6 +87,7 @@
             key-positions = <12 13>;
             layers = <0>;
             timeout-ms = <100>;
+            require-prior-idle-ms = <100>;
         };
 
         right-ctrl {
@@ -93,6 +95,7 @@
             key-positions = <17 18>;
             layers = <0>;
             timeout-ms = <100>;
+            require-prior-idle-ms = <100>;
         };
 
         left-ctrl {
@@ -100,6 +103,7 @@
             key-positions = <12 11>;
             layers = <0>;
             timeout-ms = <100>;
+            require-prior-idle-ms = <100>;
         };
 
         sticky-shift {

@@ -26,7 +26,7 @@
     quick-tap-ms = <175>;
     flavor = "balanced";
     tapping-term-ms = <240>;
-    require-prior-idle-ms = <100>;
+    require-prior-idle-ms = <150>;
 };
 
 &sk { quick-release; };
@@ -45,7 +45,7 @@
             bindings = <&mo 3>;
             key-positions = <33 36>;
             slow-release;
-            timeout-ms = <100>;
+            timeout-ms = <50>;
         };
 
         right-hyper {
@@ -74,34 +74,6 @@
             timeout-ms = <100>;
         };
 
-        right-alt {
-            bindings = <&kp RALT>;
-            key-positions = <16 17>;
-            layers = <0>;
-            timeout-ms = <100>;
-        };
-
-        left-alt {
-            bindings = <&kp LALT>;
-            key-positions = <12 13>;
-            layers = <0>;
-            timeout-ms = <100>;
-        };
-
-        right-ctrl {
-            bindings = <&kp RCTRL>;
-            key-positions = <17 18>;
-            layers = <0>;
-            timeout-ms = <100>;
-        };
-
-        left-ctrl {
-            bindings = <&kp LCTRL>;
-            key-positions = <12 11>;
-            layers = <0>;
-            timeout-ms = <100>;
-        };
-
         sticky-shift {
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <34 35>;
@@ -124,12 +96,14 @@
             bindings = <&kp RCMD>;
             key-positions = <27 28 29>;
             timeout-ms = <100>;
+            layers = <0>;
         };
 
         left-cmd {
             bindings = <&kp LCMD>;
             key-positions = <22 23 24>;
             timeout-ms = <100>;
+            layers = <0>;
         };
     };
 
@@ -168,10 +142,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                  &kp Q  &kp W  &kp E                 &kp R      &kp T             &kp Y               &kp U         &kp I       &kp O    &kp P
-                  &kp A  &kp S  &kp D                 &kp F      &kp G             &kp H               &kp J         &kp K       &kp L    &kp SEMICOLON
-&mt LSHIFT MINUS  &kp Z  &kp X  &kp C                 &kp V      &kp B             &kp N               &kp M         &kp COMMA   &kp DOT  &kp FSLH       &mt RSHIFT APOSTROPHE
-                                &mt LA(LC(LGUI)) ESC  &lt 1 TAB  &mt LGUI SPACE    &mt LGUI BACKSPACE  &lt 2 RETURN  &sk RSHIFT
+                      &kp Q  &kp W  &kp E             &kp R      &kp T             &kp Y               &kp U         &kp I                 &kp O    &kp P
+                      &kp A  &kp S  &kp D             &kp F      &kp G             &kp H               &kp J         &kp K                 &kp L    &kp SEMICOLON
+&mt LEFT_SHIFT MINUS  &kp Z  &kp X  &kp C             &kp V      &kp B             &kp N               &kp M         &kp COMMA             &kp DOT  &kp FSLH       &mt RIGHT_SHIFT APOSTROPHE
+                                    &mt LEFT_ALT ESC  &lt 1 TAB  &mt LGUI SPACE    &mt LGUI BACKSPACE  &lt 2 RETURN  &mt RIGHT_ALT DELETE
             >;
         };
 
@@ -194,17 +168,17 @@
             bindings = <
        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &kp K_MUTE          &kp LG(LEFT_BRACKET)  &kp PAGE_DOWN  &kp PAGE_UP         &kp LG(RIGHT_BRACKET)  &kp LS(TAB)
        &kp LCTRL             &kp LALT              &kp LGUI           &kp LSHFT        &none               &kp LEFT              &kp DOWN       &kp UP              &kp RIGHT              &kp TAB
-&none  &none                 &none                 &kp C_PREV         &kp C_NEXT       &kp C_PLAY_PAUSE    &kp LA(LEFT)          &kp LG(RIGHT)  &kp LG(LEFT_ARROW)  &kp LA(RIGHT)          &trans       &kp DEL
+&none  &none                 &none                 &kp C_PREV         &kp C_NEXT       &kp C_PLAY_PAUSE    &kp LA(LEFT)          &kp LG(RIGHT)  &kp LG(LEFT_ARROW)  &kp LA(RIGHT)          &trans       &none
                                                    &trans             &trans           &trans              &trans                &trans         &trans
             >;
         };
 
         num+sym_layer {
             bindings = <
-           &kp NUMBER_1         &kp N2          &kp N3     &kp N4     &kp N5                  &kp N6                 &kp N7     &kp N8     &kp N9    &kp N0
-           &kp LCTRL            &kp LALT        &kp LGUI   &kp LSHFT  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RSHFT  &kp RGUI   &kp RALT  &kp RCTRL
-&kp GRAVE  &kp LS(RIGHT_SHIFT)  &kp UNDERSCORE  &kp MINUS  &kp PLUS   &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BACKSLASH
-                                                &trans     &trans     &trans                  &trans                 &trans     &trans
+           &kp NUMBER_1  &kp N2        &kp N3                &kp N4                 &kp N5       &kp N6     &kp N7          &kp N8           &kp N9    &kp N0
+           &kp LCTRL     &kp LALT      &kp LGUI              &kp LSHFT              &kp MINUS    &kp PLUS   &kp RSHFT       &kp RGUI         &kp RALT  &kp RCTRL
+&kp GRAVE  &kp CAPSLOCK  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER    &kp EQUAL  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LBKT  &kp RBKT   &kp BACKSLASH
+                                       &trans                &trans                 &trans       &trans     &trans          &trans
             >;
         };
 
@@ -234,10 +208,10 @@
 
         reset_layer {
             bindings = <
-            &none  &none  &none   &none   &sys_reset     &none   &none   &none   &none  &none
-            &none  &none  &none   &none   &none          &none   &none   &none   &none  &none
-&bt BT_CLR  &none  &none  &none   &none   &bootloader    &none   &none   &none   &none  &none  &bt BT_CLR_ALL
-                          &trans  &trans  &trans         &trans  &trans  &trans
+            &none  &none  &none   &none   &sys_reset     &none           &none   &none   &none  &none
+            &none  &none  &none   &none   &none          &none           &none   &none   &none  &none
+&bt BT_CLR  &none  &none  &none   &none   &bootloader    &studio_unlock  &none   &none   &none  &none  &bt BT_CLR_ALL
+                          &trans  &trans  &trans         &trans          &trans  &trans
             >;
         };
 

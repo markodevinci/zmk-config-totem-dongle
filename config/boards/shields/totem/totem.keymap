@@ -12,12 +12,6 @@
         compatible = "zmk,combos";
 
         // Left Hand Utilities
-
-        combo_esc {
-            key-positions = <22 23 24>;      // Q + W
-            bindings = <&kp ESC>;
-        };
-
         // HYPER & CAPS combos (Requirement 1)
 
         combo_left_hyper {
@@ -57,6 +51,18 @@
             key-positions = <14 25>;
             layers = <1>;
         };
+
+        left-cmd {
+            bindings = <&sk LGUI>;
+            key-positions = <11 12 13>;
+            layers = <0>;
+        };
+
+        right-cmd {
+            bindings = <&sk RGUI>;
+            key-positions = <16 17 18>;
+            layers = <0>;
+        };
     };
 
     conditional_layers {
@@ -76,10 +82,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-            &kp Q  &kp W  &kp E     &kp R      &kp T        &kp Y          &kp U      &kp I            &kp O    &kp P
-            &kp A  &kp S  &kp D     &kp F      &kp G        &kp H          &kp J      &kp K            &kp L    &kp SEMI
-&sk LSHIFT  &kp Z  &kp X  &kp C     &kp V      &kp B        &kp N          &kp M      &kp COMMA        &kp DOT  &kp FSLH  &kp SQT
-                          &sk LCMD  &lt 1 TAB  &kp SPACE    &kp BACKSPACE  &lt 2 RET  &mt EQUAL MINUS
+                &kp Q  &kp W  &kp E               &kp R         &kp T          &kp Y            &kp U              &kp I           &kp O    &kp P
+                &kp A  &kp S  &kp D               &kp F         &kp G          &kp H            &kp J              &kp K           &kp L    &kp SEMI
+&mt LSHIFT ESC  &kp Z  &kp X  &kp C               &kp V         &kp B          &kp N            &kp M              &kp COMMA       &kp DOT  &kp FSLH  &mt RIGHT_SHIFT SQT
+                              &mt LEFT_ALT MINUS  &mt LGUI TAB  &lt 1 SPACE    &lt 2 BACKSPACE  &mt RIGHT_GUI RET  &mt RALT EQUAL
             >;
         };
 

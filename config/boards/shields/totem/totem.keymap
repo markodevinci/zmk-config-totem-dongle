@@ -18,6 +18,7 @@
             key-positions = <10 11 12 13>;    // Z + X
             bindings = <&sk LS(LC(LA(LCMD)))>; // Native Hyper
             layers = <0>;
+            timeout-ms = <125>;
         };
 
         // Right Hand Punctuation Combos
@@ -26,42 +27,49 @@
             bindings = <&sk LS(LC(LA(LCMD)))>;
             key-positions = <17 18 19 16>;
             layers = <0>;
+            timeout-ms = <125>;
         };
 
         combo_left_meh {
             bindings = <&sk LC(LA(LGUI))>;
-            key-positions = <10 11 12>;
+            key-positions = <11 12 13>;
             layers = <0>;
+            timeout-ms = <125>;
         };
 
         combo_right_meh {
             bindings = <&sk LC(LA(LGUI))>;
-            key-positions = <17 18 19>;
+            key-positions = <17 18 16>;
             layers = <0>;
+            timeout-ms = <125>;
         };
 
         combo-switch-windows {
             bindings = <&kp LC(LA(LG(J)))>;
             key-positions = <23 24>;
             layers = <1>;
+            timeout-ms = <125>;
         };
 
         combo-mute {
             bindings = <&kp K_MUTE>;
             key-positions = <14 25>;
             layers = <1>;
+            timeout-ms = <125>;
         };
 
         left-cmd {
             bindings = <&sk LGUI>;
-            key-positions = <11 12 13>;
+            key-positions = <23 22 24>;
             layers = <0>;
+            timeout-ms = <125>;
         };
 
         right-cmd {
             bindings = <&sk RGUI>;
-            key-positions = <16 17 18>;
+            key-positions = <27 28 29>;
             layers = <0>;
+            timeout-ms = <125>;
         };
     };
 
@@ -91,8 +99,8 @@
 
         action-nav_layer {
             bindings = <
-           &kp N1                &kp N2                &kp N3                &kp N4                 &kp N5               &none     &none     &none   &none      &none
-           &sk LCTRL             &sk LALT              &sk LGUI              &sk LSHFT              &kp K_VOLUME_UP      &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp TAB
+           &kp N1                &kp N2                &kp N3                &kp N4                 &kp N5               &kp N6    &kp N7    &kp N8  &kp N9     &kp N0
+           &sk LSHFT             &sk LCTRL             &sk LALT              &sk LGUI               &kp K_VOLUME_UP      &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp TAB
 &kp GLOBE  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp K_VOLUME_DOWN    &none     &none     &none   &none      &none    &none
                                                        &trans                &trans                 &trans               &trans    &trans    &trans
             >;

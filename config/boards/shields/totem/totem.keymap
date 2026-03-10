@@ -95,7 +95,7 @@
 
         sticky_shift {
             bindings = <&sk LSHIFT>;
-            key-positions = <32 37>;
+            key-positions = <33 36>;
             timeout-ms = <125>;
             layers = <0>;
         };
@@ -109,7 +109,7 @@
 
         globe {
             bindings = <&kp GLOBE>;
-            key-positions = <33 36>;
+            key-positions = <32 37>;
             layers = <0>;
             timeout-ms = <125>;
         };

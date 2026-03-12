@@ -7,6 +7,8 @@
 #define NUM  2
 #define ADJ  3
 
+&sk { quick-release; };
+
 / {
     combos {
         compatible = "zmk,combos";

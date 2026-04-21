@@ -9,6 +9,8 @@
 
 &sk { quick-release; };
 
+&lt { require-prior-idle-ms = <125>; };
+
 / {
     combos {
         compatible = "zmk,combos";

@@ -158,6 +158,26 @@
             hold-trigger-key-positions = <34 32 33 25 24 23 12 13 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25 32 33 34>;
             hold-trigger-on-release;
         };
+
+        sk_caps: sk_caps {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SK_CAPS";
+            bindings = <&sk LSHFT>, <&caps_word>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        shft_smart: shft_smart {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHFT_SMART";
+            bindings = <&kp>, <&sk_caps>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -166,10 +186,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-                                &kp Q  &kp W  &kp E                               &kp R      &kp T                             &kp Y                                &kp U      &kp I                            &kp O    &kp P
-                                &kp A  &kp S  &kp D                               &kp F      &kp G                             &kp H                                &kp J      &kp K                            &kp L    &kp SEMI
-&urob_hold_tap_left LSHIFT ESC  &kp Z  &kp X  &kp C                               &kp V      &kp B                             &kp N                                &kp M      &kp COMMA                        &kp DOT  &kp FSLH  &urob_hold_tap_right RIGHT_SHIFT SQT
-                                              &urob_hold_tap_left LEFT_ALT MINUS  &lt 1 TAB  &urob_hold_tap_left LGUI SPACE    &urob_hold_tap_right RGUI BACKSPACE  &lt 2 RET  &urob_hold_tap_right RALT EQUAL
+                                  &kp Q  &kp W  &kp E                                &kp R                         &kp T          &kp Y            &kp U                &kp I                            &kp O    &kp P
+                                  &kp A  &kp S  &kp D                                &kp F                         &kp G          &kp H            &kp J                &kp K                            &kp L    &kp SEMI
+&urob_hold_tap_left LSHIFT MINUS  &kp Z  &kp X  &kp C                                &kp V                         &kp B          &kp N            &kp M                &kp COMMA                        &kp DOT  &kp FSLH  &urob_hold_tap_right RIGHT_SHIFT SQT
+                                                &urob_hold_tap_left LEFT_ALT ESCAPE  &urob_hold_tap_left LGUI TAB  &lt 1 SPACE    &lt 2 BACKSPACE  &shft_smart LSHFT 0  &urob_hold_tap_right RALT ENTER
             >;
         };
 

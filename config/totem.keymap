@@ -188,19 +188,19 @@
         base_layer {
             label = "BASE";
             bindings = <
-                                  &kp Q  &kp W  &kp E                &kp R         &kp T          &kp Y            &kp U           &kp I                &kp O    &kp P
-                                  &kp A  &kp S  &kp D                &kp F         &kp G          &kp H            &kp J           &kp K                &kp L    &kp SEMI
-&urob_hold_tap_left LSHIFT MINUS  &kp Z  &kp X  &kp C                &kp V         &kp B          &kp N            &kp M           &kp COMMA            &kp DOT  &kp FSLH  &urob_hold_tap_right RIGHT_SHIFT SQT
-                                                &mt LEFT_ALT ESCAPE  &mt LGUI TAB  &lt 1 SPACE    &lt 2 BACKSPACE  &mt RGUI ENTER  &shft_smart LSHFT 0
+                                  &kp Q  &kp W  &kp E                &kp R        &kp T           &kp Y           &kp U            &kp I                &kp O    &kp P
+                                  &kp A  &kp S  &kp D                &kp F        &kp G           &kp H           &kp J            &kp K                &kp L    &kp SEMI
+&urob_hold_tap_left LSHIFT MINUS  &kp Z  &kp X  &kp C                &kp V        &kp B           &kp N           &kp M            &kp COMMA            &kp DOT  &kp FSLH  &urob_hold_tap_right RIGHT_SHIFT SQT
+                                                &mt LEFT_ALT ESCAPE  &lt 1 SPACE  &mt LGUI TAB    &mt RGUI ENTER  &lt 2 BACKSPACE  &shft_smart LSHFT 0
             >;
         };
 
         action-nav_layer {
             bindings = <
-           &kp N1                &kp N2                &kp N3                &kp N4                 &kp N5               &kp N6      &kp N7      &kp N8     &kp N9      &kp N0
-           &sk LSHFT             &sk LCTRL             &sk LALT              &sk LGUI               &kp K_VOLUME_UP      &kp LEFT    &kp DOWN    &kp UP     &kp RIGHT   &kp TAB
-&kp GLOBE  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp K_VOLUME_DOWN    &kp K_PREV  &kp K_NEXT  &kp COMMA  &kp PERIOD  &kp SLASH  &kp NON_US_BACKSLASH
-                                                       &trans                &trans                 &trans               &trans      &trans      &trans
+           &kp LS(LG(N1))        &kp LS(LG(N2))        &kp LS(LG(N3))        &kp LS(LG(N4))         &kp LS(LG(N5))       &kp HOME    &kp PAGE_DOWN  &kp PAGE_UP  &kp END     &kp LS(TAB)
+           &sk LSHFT             &sk LCTRL             &sk LALT              &sk LGUI               &kp K_VOLUME_UP      &kp LEFT    &kp DOWN       &kp UP       &kp RIGHT   &kp TAB
+&kp GLOBE  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp K_VOLUME_DOWN    &kp K_PREV  &kp K_NEXT     &kp COMMA    &kp PERIOD  &kp SLASH    &kp CAPSLOCK
+                                                       &trans                &trans                 &trans               &trans      &trans         &trans
             >;
 
             label = "ACT-NAV";
